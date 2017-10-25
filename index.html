@@ -1,10 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Valentin Sirbu</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1em;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    ::selection {
+      background-color: #242424;
+    }
+
+    body {
+      height: 100%;
+      background-color: #385058;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    img {
+      height: auto;
+      width: 100%;
+      user-select: none;
+    }
+
+    #profilecard {
+      position: relative;
+      padding-top: 52px;
+      background: linear-gradient(to left, #00D2C8, #1A8A9D);
+      border-radius: 35px;
+      min-height: 580px;
+      max-width: 440px;
+      margin: 40px auto;
+    }
+
+    #profilecard h1 {
+      color: #FAEAFF;
+    }
+
+    .user {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+    }
+
+    .user img {
+      border-radius: 100px;
+      width: 160px;
+      border: 4px solid #FAEAFF;
+      margin-top: -20px;
+    }
+
+
+
+    .info li {
+      color: #eee;
+      font-size: 0.8em;
+      display: inline-block;
+      margin: 0 6px;
+    }
+
+    .contacts {
+      min-height: 100px;
+    }
+
+    .contacts i {
+      display: inline-block;
+      margin: 20px 0;
+    }
+
+    .contacts a {
+      margin: 0 6px;
+    }
+
+    .btn-contact {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 25px 0 0 0;
+    }
+
+    .btn-contact a {
+      position: absolute;
+      box-shadow: 0 0 4px 0px #000;
+      color: #FAEAFF;
+      background-color: #2F4858;
+      border-radius: 30px;
+      padding: 7px 49px;
+      transition: 350ms;
+      -webkit-transition: all .3s;
+    }
+
+    .btn-contact a:hover {
+      font-weight: bold;
+      color: #2F4858;
+      background-color: #FAEAFF;
+      padding: 8px 56px;
+      transition: 350ms;
+      -webkit-transition: all .3s;
+    }
+
+    .content {
+      color: #FAEAFF;
+      background: linear-gradient(to bottom, #2F4858, #2C687C);
+      border-radius: 0 0 30px 30px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content p {
+      margin: 30px 0 25px 0;
+    }
+
+    a .fa {
+      font-size: 36px;
+      transition: 500ms;
+    }
+
+    a:hover .fa {
+      color: #2F4858;
+      transition: 500ms;
+    }
+
+    a .fa-twitter-square, a .fa-instagram, a .fa-facebook-square, a .fa-linkedin {
+      color: #FAEAFF;
+    }
+
+  </style>
 </head>
 <body>
-    <h3>Under construction</h3>
+<div id="profilecard">
+  <div class="user">
+    <img src="profile.jpg">
+  </div>
+  <h1>Valentin Sirbu</h1>
+  <ul class="info">
+    <li>Full Stack Web <strong>Developer</strong></li>
+  </ul>
+  <ul class="contacts">
+    <a href="https://www.facebook.com/valentin.sirbu.5"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/sirbuvalentin/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/ValentinSirbu"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/valentin-sirbu/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  </ul>
+  <div class="btn-contact">
+    <a href="mailto:valentinsirbu@yandex.com">Contact Me</a>
+  </div>
+  <div class="content">
+    <p> > Hello World!</p>
+  </div>
+</div>
+
 </body>
 </html>
